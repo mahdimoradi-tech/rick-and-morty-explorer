@@ -1,16 +1,30 @@
-# React + Vite
+# 🌌 Rick and Morty Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, feature-rich React application that interacts with the official Rick and Morty API. It allows users to search for characters, view detailed information including their episode appearances, and manage a personalized list of favorite characters.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+**[View Live Application](https://rick-and-morty-explorer-delta.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
+- **Live Search:** Real-time character search by name directly from the API.
+- **Detailed Character Profiles:** View comprehensive data including status, species, gender, last known location, and origin.
+- **Episodes Tracking:** Expandable accordion displaying all episodes a character appeared in, with chronological sorting capabilities.
+- **Favorites Management:** Add or remove characters from a favorites list accessible via a custom-built Modal.
+- **Data Persistence:** Favorites are securely saved in the browser's `localStorage` using a custom React hook, ensuring data survives page reloads.
+- **Advanced Error Handling:** Graceful API error catching and request cancellation (AbortController) paired with elegant Toast notifications.
+- **Custom UI Components:** Built from scratch including Modals, Accordions, and custom loading indicators without relying on heavy UI frameworks.
 
-## React Compiler
+## 🛠️ Tech Stack & Architecture
+- **Framework:** React 19 (Vite)
+- **Data Fetching:** Axios (with AbortController for cleanup)
+- **State Management:** Custom Hooks (`useCharacters`, `useLocalStorage`)
+- **Styling:** Pure CSS with CSS Custom Properties (Variables)
+- **Icons:** `@heroicons/react`
+- **Notifications:** `react-hot-toast`
+- **Loaders:** `react-loading-indicators`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Run Locally
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/YOUR-USERNAME/rick-and-morty-explorer.git](https://github.com/YOUR-USERNAME/rick-and-morty-explorer.git)
